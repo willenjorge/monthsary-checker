@@ -98,3 +98,121 @@
         margin-top: 40px;
     }
 }
+
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4f4f4;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        height: 550px;
+        width: 650px;
+        border-radius: 15px;
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    input {
+        -webkit-appearance: none;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        height: 70px;
+        width: 500px;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        font-size: 50px ;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .calculateButton {
+        -webkit-appearance: none;
+        margin-top: -10px;
+        width: 300px;
+        height: 70px;
+        border-radius: 15px;
+        border: none;
+        background-color: rgb(194, 233, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        color: #000;
+        transition: 0.3s;
+    }
+
+    .calculateButton:hover {
+        cursor: pointer;
+        background-color: rgb(168, 221, 252);
+        transition: 0.3s;
+    }
+    
+    .calculateButton:active {
+        background-color: rgb(123, 188, 226);
+    }
+
+    .clearButton {
+        -webkit-appearance: none;
+        width: 120px;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        background-color: #e5e5e5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #000;
+        font-size: 16px;
+        margin-top: -35px;
+        transition: 0.3s;
+    }
+
+    .clearButton:hover {
+        cursor: pointer;
+        background-color: #d3d3d3;
+        transition: 0.3s;
+    }
+
+    .clearButton:active {
+        background-color: #b3b3b3;
+    }
+
+    #result {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        margin-top: 50px;
+    }
+}
