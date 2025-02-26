@@ -1,9 +1,13 @@
 function calculate() { // New algorithm that calculates the accurate months.
     const startDate = new Date(document.getElementById('startDate').value)
     const endDate = new Date(document.getElementById('endDate').value)
+    const validation = endDate - startDate;
 
     if (isNaN(startDate) || isNaN(endDate)) {
         document.getElementById('result').textContent = "Please select valid dates.";
+        document.getElementById('result').style.color = "red";
+    } else if (validation < 0) { // Fix to CHANGES.1 Bug. Added input validation for date input.
+        document.getElementById('result').textContent = "Date input is invalid.";
         document.getElementById('result').style.color = "red";
     } else {
         document.getElementById('result').style.color = "#000";
