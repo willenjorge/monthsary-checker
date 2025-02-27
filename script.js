@@ -27,24 +27,24 @@ function calculate() { // New algorithm that calculates the accurate months.
                 resultMonths = months - 1;
                 
                 if (resultMonths == 1) {
-                    document.getElementById('result').textContent = 'You are now ' + resultMonths + ' month.';
+                    document.getElementById('result').textContent = 'You have been together for ' + resultMonths + ' month.';
                 } else {
-                    document.getElementById('result').textContent = 'You are now ' + resultMonths + ' months.';
+                    document.getElementById('result').textContent = 'You have been together for ' + resultMonths + ' months.';
                 }
             } else {
                 if (months == 1) {
-                    document.getElementById('result').textContent = 'You are now ' + months + ' month.';
+                    document.getElementById('result').textContent = 'You have been together for ' + months + ' month.';
                 } else {
-                    document.getElementById('result').textContent = 'You are now ' + months + ' months.';
+                    document.getElementById('result').textContent = 'You have been together for ' + months + ' months.';
                 }
             }
         } else {
             if (endDay < startDay) {
                 resultMonths = ((years * 12) + months - 1);
-                document.getElementById('result').textContent = 'You are now ' + resultMonths + ' months.';
+                document.getElementById('result').textContent = 'You have been together for ' + resultMonths + ' months.';
             } else {
                 resultMonths = ((years * 12) + months);
-                document.getElementById('result').textContent = 'You are now ' + resultMonths + ' months.';
+                document.getElementById('result').textContent = 'You have been together for ' + resultMonths + ' months.';
             }
         }
     }
